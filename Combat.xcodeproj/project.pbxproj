@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A3C11221AC33D4B0041B3FB /* automation.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C11211AC33D4B0041B3FB /* automation.applescript */; };
+		6A3C11231AC33D580041B3FB /* automation.applescript in Resources */ = {isa = PBXBuildFile; fileRef = 6A3C11211AC33D4B0041B3FB /* automation.applescript */; };
+		6AAC89D61ABC4F170056C764 /* cliclick in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC89D51ABC4F170056C764 /* cliclick */; };
+		6AB6E96A196412EE008DB9D6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB6E969196412EE008DB9D6 /* Cocoa.framework */; };
+		6AB6EA301966B028008DB9D6 /* Combat_Interface.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6EA2F1966B028008DB9D6 /* Combat_Interface.m */; };
+		6AB6EA331966B05E008DB9D6 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6EA321966B05E008DB9D6 /* Utilities.m */; };
+		6AB6EA361966B06F008DB9D6 /* Control+Set.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6EA351966B06F008DB9D6 /* Control+Set.m */; };
+		6AB6EA391966B07D008DB9D6 /* Control+Get.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6EA381966B07D008DB9D6 /* Control+Get.m */; };
+		6AB6EA3D1966B0A2008DB9D6 /* Application+Set.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6EA3C1966B0A2008DB9D6 /* Application+Set.m */; };
+		6AB6EA401966B0B7008DB9D6 /* Application+AppleScript+Set.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6EA3F1966B0B7008DB9D6 /* Application+AppleScript+Set.m */; };
+		6AB6EA441966B0F1008DB9D6 /* Application+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6EA431966B0F1008DB9D6 /* Application+Search.m */; };
+		6AB6EA471966B120008DB9D6 /* SystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6EA461966B120008DB9D6 /* SystemManager.m */; };
+		6AB6EA4A1966B12F008DB9D6 /* System+Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6EA491966B12F008DB9D6 /* System+Application.m */; };
+		6AB6EA4F1966E81A008DB9D6 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6EA4E1966E81A008DB9D6 /* Application.m */; };
+		6AB6EA53196A939D008DB9D6 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6EA52196A939D008DB9D6 /* Logger.m */; };
+		6AB6EA57196AAE35008DB9D6 /* Application+Get.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6EA56196AAE35008DB9D6 /* Application+Get.m */; };
+		6AB6EA5C196FF91A008DB9D6 /* Combat+Mouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6EA5B196FF91A008DB9D6 /* Combat+Mouse.m */; };
+		6AB6EA5F196FF934008DB9D6 /* Combat+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6EA5E196FF934008DB9D6 /* Combat+Keyboard.m */; };
+		A610B7B51BC5349500EF3586 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB6E96C196412EE008DB9D6 /* AppKit.framework */; };
+		A6F337AF1BC5D58E00B9E161 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F337AE1BC5D58E00B9E161 /* main.m */; };
+		A6F337FB1BC5DB9000B9E161 /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F337FA1BC5DB9000B9E161 /* DataProvider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A3C11211AC33D4B0041B3FB /* automation.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = automation.applescript; sourceTree = "<group>"; };
+		6AAC89D51ABC4F170056C764 /* cliclick */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = cliclick; sourceTree = "<group>"; };
+		6AB6E969196412EE008DB9D6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6AB6E96C196412EE008DB9D6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6AB6E96D196412EE008DB9D6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6AB6E96E196412EE008DB9D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6AB6EA2E1966B028008DB9D6 /* Combat_Interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Combat_Interface.h; sourceTree = "<group>"; };
+		6AB6EA2F1966B028008DB9D6 /* Combat_Interface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Combat_Interface.m; sourceTree = "<group>"; };
+		6AB6EA311966B05E008DB9D6 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		6AB6EA321966B05E008DB9D6 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		6AB6EA341966B06F008DB9D6 /* Control+Set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Control+Set.h"; sourceTree = "<group>"; };
+		6AB6EA351966B06F008DB9D6 /* Control+Set.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Control+Set.m"; sourceTree = "<group>"; };
+		6AB6EA371966B07D008DB9D6 /* Control+Get.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Control+Get.h"; sourceTree = "<group>"; };
+		6AB6EA381966B07D008DB9D6 /* Control+Get.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Control+Get.m"; sourceTree = "<group>"; };
+		6AB6EA3B1966B0A2008DB9D6 /* Application+Set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Application+Set.h"; sourceTree = "<group>"; };
+		6AB6EA3C1966B0A2008DB9D6 /* Application+Set.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Application+Set.m"; sourceTree = "<group>"; };
+		6AB6EA3E1966B0B7008DB9D6 /* Application+AppleScript+Set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Application+AppleScript+Set.h"; sourceTree = "<group>"; };
+		6AB6EA3F1966B0B7008DB9D6 /* Application+AppleScript+Set.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Application+AppleScript+Set.m"; sourceTree = "<group>"; };
+		6AB6EA421966B0F1008DB9D6 /* Application+Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Application+Search.h"; sourceTree = "<group>"; };
+		6AB6EA431966B0F1008DB9D6 /* Application+Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Application+Search.m"; sourceTree = "<group>"; wrapsLines = 1; };
+		6AB6EA451966B120008DB9D6 /* SystemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemManager.h; sourceTree = "<group>"; };
+		6AB6EA461966B120008DB9D6 /* SystemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemManager.m; sourceTree = "<group>"; };
+		6AB6EA481966B12F008DB9D6 /* System+Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "System+Application.h"; sourceTree = "<group>"; };
+		6AB6EA491966B12F008DB9D6 /* System+Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "System+Application.m"; sourceTree = "<group>"; };
+		6AB6EA4D1966E81A008DB9D6 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		6AB6EA4E1966E81A008DB9D6 /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
+		6AB6EA51196A939D008DB9D6 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		6AB6EA52196A939D008DB9D6 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		6AB6EA55196AAE35008DB9D6 /* Application+Get.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Application+Get.h"; sourceTree = "<group>"; };
+		6AB6EA56196AAE35008DB9D6 /* Application+Get.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Application+Get.m"; sourceTree = "<group>"; };
+		6AB6EA5A196FF91A008DB9D6 /* Combat+Mouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Combat+Mouse.h"; sourceTree = "<group>"; };
+		6AB6EA5B196FF91A008DB9D6 /* Combat+Mouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Combat+Mouse.m"; sourceTree = "<group>"; };
+		6AB6EA5D196FF934008DB9D6 /* Combat+Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Combat+Keyboard.h"; sourceTree = "<group>"; };
+		6AB6EA5E196FF934008DB9D6 /* Combat+Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Combat+Keyboard.m"; sourceTree = "<group>"; };
+		A68A8D051BFCFF030050F7DA /* Combat_Terminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Combat_Terminal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F337AE1BC5D58E00B9E161 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; };
+		A6F337F91BC5DB9000B9E161 /* DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
+		A6F337FA1BC5DB9000B9E161 /* DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataProvider.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AB6E963196412EE008DB9D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A610B7B51BC5349500EF3586 /* AppKit.framework in Frameworks */,
+				6AB6E96A196412EE008DB9D6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A3C11201AC3389A0041B3FB /* applescripts */ = {
+			isa = PBXGroup;
+			children = (
+				6A3C11211AC33D4B0041B3FB /* automation.applescript */,
+			);
+			path = applescripts;
+			sourceTree = "<group>";
+		};
+		6A5D0B9F1ABA12C40048D964 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				6AAC89D51ABC4F170056C764 /* cliclick */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		6AB6E95D196412EE008DB9D6 = {
+			isa = PBXGroup;
+			children = (
+				6AB6E96F196412EE008DB9D6 /* Combat_terminal */,
+				6AB6E968196412EE008DB9D6 /* Frameworks */,
+				A68A8D051BFCFF030050F7DA /* Combat_Terminal.app */,
+			);
+			sourceTree = "<group>";
+		};
+		6AB6E968196412EE008DB9D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6E969196412EE008DB9D6 /* Cocoa.framework */,
+				6AB6E96B196412EE008DB9D6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AB6E96B196412EE008DB9D6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6E96C196412EE008DB9D6 /* AppKit.framework */,
+				6AB6E96D196412EE008DB9D6 /* CoreData.framework */,
+				6AB6E96E196412EE008DB9D6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		6AB6E96F196412EE008DB9D6 /* Combat_terminal */ = {
+			isa = PBXGroup;
+			children = (
+				6A5D0B9F1ABA12C40048D964 /* Dependencies */,
+				6AB6EA231966AEDD008DB9D6 /* Combat Core */,
+				A6F337AE1BC5D58E00B9E161 /* main.m */,
+				A6F337F91BC5DB9000B9E161 /* DataProvider.h */,
+				A6F337FA1BC5DB9000B9E161 /* DataProvider.m */,
+			);
+			name = Combat_terminal;
+			path = Combat_Terminal;
+			sourceTree = "<group>";
+		};
+		6AB6EA231966AEDD008DB9D6 /* Combat Core */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6EA2C1966AF7E008DB9D6 /* Interface */,
+				6AB6EA241966AEE8008DB9D6 /* System */,
+				6AB6EA251966AEFC008DB9D6 /* Application */,
+				6AB6EA261966AF0B008DB9D6 /* Control */,
+				6AB6EA2B1966AF59008DB9D6 /* Utilities */,
+			);
+			name = "Combat Core";
+			sourceTree = "<group>";
+		};
+		6AB6EA241966AEE8008DB9D6 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6EA2D1966AFA2008DB9D6 /* Application */,
+				6AB6EA451966B120008DB9D6 /* SystemManager.h */,
+				6AB6EA461966B120008DB9D6 /* SystemManager.m */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		6AB6EA251966AEFC008DB9D6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6EA54196AAE22008DB9D6 /* Get */,
+				6AB6EA3A1966B091008DB9D6 /* Set */,
+				6AB6EA281966AF22008DB9D6 /* AppleScript */,
+				6AB6EA271966AF17008DB9D6 /* Search */,
+				6AB6EA4D1966E81A008DB9D6 /* Application.h */,
+				6AB6EA4E1966E81A008DB9D6 /* Application.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		6AB6EA261966AF0B008DB9D6 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6EA291966AF2D008DB9D6 /* Get */,
+				6AB6EA2A1966AF33008DB9D6 /* Set */,
+			);
+			name = Control;
+			sourceTree = "<group>";
+		};
+		6AB6EA271966AF17008DB9D6 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6EA421966B0F1008DB9D6 /* Application+Search.h */,
+				6AB6EA431966B0F1008DB9D6 /* Application+Search.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		6AB6EA281966AF22008DB9D6 /* AppleScript */ = {
+			isa = PBXGroup;
+			children = (
+				6A3C11201AC3389A0041B3FB /* applescripts */,
+				6AB6EA3E1966B0B7008DB9D6 /* Application+AppleScript+Set.h */,
+				6AB6EA3F1966B0B7008DB9D6 /* Application+AppleScript+Set.m */,
+			);
+			name = AppleScript;
+			sourceTree = "<group>";
+		};
+		6AB6EA291966AF2D008DB9D6 /* Get */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6EA371966B07D008DB9D6 /* Control+Get.h */,
+				6AB6EA381966B07D008DB9D6 /* Control+Get.m */,
+			);
+			name = Get;
+			sourceTree = "<group>";
+		};
+		6AB6EA2A1966AF33008DB9D6 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6EA341966B06F008DB9D6 /* Control+Set.h */,
+				6AB6EA351966B06F008DB9D6 /* Control+Set.m */,
+			);
+			name = Set;
+			sourceTree = "<group>";
+		};
+		6AB6EA2B1966AF59008DB9D6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6EA59196FF8FF008DB9D6 /* Mouse */,
+				6AB6EA58196FF8F9008DB9D6 /* Keyboard */,
+				6AB6EA50196A938E008DB9D6 /* Logger */,
+				6AB6EA311966B05E008DB9D6 /* Utilities.h */,
+				6AB6EA321966B05E008DB9D6 /* Utilities.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		6AB6EA2C1966AF7E008DB9D6 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6EA2E1966B028008DB9D6 /* Combat_Interface.h */,
+				6AB6EA2F1966B028008DB9D6 /* Combat_Interface.m */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		6AB6EA2D1966AFA2008DB9D6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6EA481966B12F008DB9D6 /* System+Application.h */,
+				6AB6EA491966B12F008DB9D6 /* System+Application.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		6AB6EA3A1966B091008DB9D6 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6EA3B1966B0A2008DB9D6 /* Application+Set.h */,
+				6AB6EA3C1966B0A2008DB9D6 /* Application+Set.m */,
+			);
+			name = Set;
+			sourceTree = "<group>";
+		};
+		6AB6EA50196A938E008DB9D6 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6EA51196A939D008DB9D6 /* Logger.h */,
+				6AB6EA52196A939D008DB9D6 /* Logger.m */,
+			);
+			name = Logger;
+			sourceTree = "<group>";
+		};
+		6AB6EA54196AAE22008DB9D6 /* Get */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6EA55196AAE35008DB9D6 /* Application+Get.h */,
+				6AB6EA56196AAE35008DB9D6 /* Application+Get.m */,
+			);
+			name = Get;
+			sourceTree = "<group>";
+		};
+		6AB6EA58196FF8F9008DB9D6 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6EA5D196FF934008DB9D6 /* Combat+Keyboard.h */,
+				6AB6EA5E196FF934008DB9D6 /* Combat+Keyboard.m */,
+			);
+			name = Keyboard;
+			sourceTree = "<group>";
+		};
+		6AB6EA59196FF8FF008DB9D6 /* Mouse */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6EA5A196FF91A008DB9D6 /* Combat+Mouse.h */,
+				6AB6EA5B196FF91A008DB9D6 /* Combat+Mouse.m */,
+			);
+			name = Mouse;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AB6E965196412EE008DB9D6 /* Combat.temp_caseinsensitive_rename */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AB6E99A196412EE008DB9D6 /* Build configuration list for PBXNativeTarget "Combat.temp_caseinsensitive_rename" */;
+			buildPhases = (
+				6AB6E962196412EE008DB9D6 /* Sources */,
+				6AB6E963196412EE008DB9D6 /* Frameworks */,
+				6AB6E964196412EE008DB9D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Combat.temp_caseinsensitive_rename;
+			productName = Combat_Terminal;
+			productReference = A68A8D051BFCFF030050F7DA /* Combat_Terminal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AB6E95E196412EE008DB9D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Combat;
+			};
+			buildConfigurationList = 6AB6E961196412EE008DB9D6 /* Build configuration list for PBXProject "Combat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AB6E95D196412EE008DB9D6;
+			productRefGroup = 6AB6E95D196412EE008DB9D6;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AB6E965196412EE008DB9D6 /* Combat.temp_caseinsensitive_rename */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AB6E964196412EE008DB9D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A3C11231AC33D580041B3FB /* automation.applescript in Resources */,
+				6AAC89D61ABC4F170056C764 /* cliclick in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AB6E962196412EE008DB9D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB6EA331966B05E008DB9D6 /* Utilities.m in Sources */,
+				A6F337FB1BC5DB9000B9E161 /* DataProvider.m in Sources */,
+				6A3C11221AC33D4B0041B3FB /* automation.applescript in Sources */,
+				6AB6EA5F196FF934008DB9D6 /* Combat+Keyboard.m in Sources */,
+				6AB6EA57196AAE35008DB9D6 /* Application+Get.m in Sources */,
+				6AB6EA391966B07D008DB9D6 /* Control+Get.m in Sources */,
+				6AB6EA3D1966B0A2008DB9D6 /* Application+Set.m in Sources */,
+				A6F337AF1BC5D58E00B9E161 /* main.m in Sources */,
+				6AB6EA441966B0F1008DB9D6 /* Application+Search.m in Sources */,
+				6AB6EA4F1966E81A008DB9D6 /* Application.m in Sources */,
+				6AB6EA53196A939D008DB9D6 /* Logger.m in Sources */,
+				6AB6EA301966B028008DB9D6 /* Combat_Interface.m in Sources */,
+				6AB6EA361966B06F008DB9D6 /* Control+Set.m in Sources */,
+				6AB6EA471966B120008DB9D6 /* SystemManager.m in Sources */,
+				6AB6EA401966B0B7008DB9D6 /* Application+AppleScript+Set.m in Sources */,
+				6AB6EA4A1966B12F008DB9D6 /* System+Application.m in Sources */,
+				6AB6EA5C196FF91A008DB9D6 /* Combat+Mouse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6AB6E998196412EE008DB9D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6AB6E999196412EE008DB9D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6AB6E99B196412EE008DB9D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Combat_Terminal/Combat.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "Combat_Terminal/combat-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				PRODUCT_NAME = Combat_Terminal;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6AB6E99C196412EE008DB9D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Combat_Terminal/Combat.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "Combat_Terminal/combat-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				PRODUCT_NAME = Combat_Terminal;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AB6E961196412EE008DB9D6 /* Build configuration list for PBXProject "Combat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB6E998196412EE008DB9D6 /* Debug */,
+				6AB6E999196412EE008DB9D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AB6E99A196412EE008DB9D6 /* Build configuration list for PBXNativeTarget "Combat.temp_caseinsensitive_rename" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB6E99B196412EE008DB9D6 /* Debug */,
+				6AB6E99C196412EE008DB9D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AB6E95E196412EE008DB9D6 /* Project object */;
+}
